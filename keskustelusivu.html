@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Keskustelu - Reyan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylekesku.css">
+
+</head>
+<body>
+
+<main class="container">
+
+
+    <section>
+        <h1>Keskustelu sivu</h1>
+        <hr>
+        <form id="form" method="get">
+            <label for="email">Sähköposti:</label>
+            <input type="email" id="email" name="email" placeholder="sahkoposti@example.com" required>
+
+            <label for="paiva">päivä:</label>
+            <input type="date" id="paiva" name="paiva" required>
+
+            <label for="type">Viesti tyyppi:</label>
+            <select id="type" name="type">
+                <option value="comment">Kommentti</option>
+                <option value="question">Kysymys</option>
+            </select>
+
+            <label for="message">Kommentti:</label>
+            <textarea id="message" name="message" rows="6" placeholder="Kirjoita viestisi tähän..." required></textarea>
+
+            <label>
+                <input type="checkbox" name="consent" id="check">
+                Hyväksyn, että tietojani saa käyttää markkinoinnissa
+            </label>
+
+            <button type="submit">Lähetä</button>
+        </form>
+    </section>
+
+<footer>
+    <nav>
+      <a href="aiemat_kommentit.html">Aiemat kommentit</a>
+    </nav>
+    <p>© 2026 Reyan</p>
+</footer>
+</main>
+<script type="module" src="keskustelu.js"></script>
+</body>
+</html>
