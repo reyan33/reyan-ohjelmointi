@@ -63,12 +63,3 @@ section article p {
 section article small {
   color: #666;
 }
-
-/* HR styling for form and comments separation */
-section hr {
-  border: none;
-  height: 3px;
-  background-color: #e86a33;
-  border-radius: 2px;
-  margin: 1.5rem 0;
-}
