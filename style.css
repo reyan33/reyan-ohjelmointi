@@ -94,3 +94,66 @@ a:hover {
   color: #0B0080;   
   transform: translateX(3px);  
 }  
+
+header nav {
+  display: flex;
+  justify-content: center; 
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+header nav button {
+  background-color: #fff3e6;     
+  border: 1px solid #e86a33;    
+  border-radius: 10px;            
+  padding: 0.5rem 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+header nav button:hover {
+  background-color: #e86a33;     
+}
+
+header nav button a  {
+  font-weight: bold;
+  color: #e86a33; 
+  text-decoration: none;
+  display: block;  
+  transition: all 0.3s ease;
+}
+
+header nav button:hover a {
+  color:white;
+  transform: translateY(-2px);
+}
+
+
+article {
+  margin-bottom: 1.5rem;
+}
+
+
+main section {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .header img {
+    margin-top: 1rem;
+    width: 120px;
+    height: 120px;
+  }
+}
+footer {
+  text-align: center;
+  padding: 1rem 0;
+}
