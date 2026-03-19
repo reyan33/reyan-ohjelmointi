@@ -63,3 +63,6 @@ section article p {
 section article small {
   color: #666;
 }
+header nav button {
+margin-left: auto;
+}
