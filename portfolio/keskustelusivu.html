@@ -14,35 +14,46 @@
 
     <section>
         <h1>Keskustelu sivu</h1>
+
+        <!-- Button to open the dialog -->
+        <button id="openDialog" class="nav-button">Kommentoi</button>
+
         <header>
             <nav>
             <button><a href="./index.html">Portfolio</a></button>
             </nav>
         </header>
+
         <hr>
-        <form id="form" method="get">
-            <label for="email">Sähköposti:</label>
-            <input type="email" id="email" name="email" placeholder="sahkoposti@example.com" required>
 
-            <label for="paiva">päivä:</label>
-            <input type="date" id="paiva" name="paiva" required>
+        <!-- Dialog with form inside -->
+        <dialog id="commentDialog">
+            <form id="form" method="get">
+                <label for="email">Sähköposti:</label>
+                <input type="email" id="email" name="email" placeholder="sahkoposti@example.com" required>
 
-            <label for="type">Viesti tyyppi:</label>
-            <select id="type" name="type">
-                <option value="comment">Kommentti</option>
-                <option value="question">Kysymys</option>
-            </select>
+                <label for="paiva">päivä:</label>
+                <input type="date" id="paiva" name="paiva" required>
 
-            <label for="message">Kommentti:</label>
-            <textarea id="message" name="message" rows="6" placeholder="Kirjoita viestisi tähän..." required></textarea>
+                <label for="type">Viesti tyyppi:</label>
+                <select id="type" name="type">
+                    <option value="comment">Kommentti</option>
+                    <option value="question">Kysymys</option>
+                </select>
 
-            <label>
-                <input type="checkbox" name="consent" id="check">
-                Hyväksyn, että tietojani saa käyttää markkinoinnissa
-            </label>
+                <label for="message">Kommentti:</label>
+                <textarea id="message" name="message" rows="6" placeholder="Kirjoita viestisi tähän..." required></textarea>
 
-            <button type="submit">Lähetä</button>
-        </form>
+                <label>
+                    <input type="checkbox" name="consent" id="check">
+                    Hyväksyn, että tietojani saa käyttää markkinoinnissa
+                </label>
+
+                <button type="button" id="closeDialog">Peruuta</button>
+                <button type="submit">Lähetä</button>
+            </form>
+        </dialog>
+
     </section>
 
 <footer>
