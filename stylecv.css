@@ -18,3 +18,7 @@ h3 {
   color: #e86a33;
   margin-bottom: 0.5rem;
 }
+/* Listan viimeisen li-elementin fontti kursivoituna */
+li:last-child {
+  font-style: italic;
+}

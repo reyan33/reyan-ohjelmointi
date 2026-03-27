@@ -175,3 +175,9 @@ details summary {
 details p {
   margin-bottom: 0.5rem;
 }
+/* Lomakekenttien focus-tausta */
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: #fff9c4; 
+}
