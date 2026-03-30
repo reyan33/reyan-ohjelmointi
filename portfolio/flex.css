@@ -53,6 +53,33 @@
 }
 h3 {
   color: #e86a33;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
+}
+/* Fonts */
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto Italic";
+    src: url("../fonts/Roboto-Italic-VariableFont_wdth,wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Apply fonts to headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* Apply italic font to body / spans  */
+span {
+    font-family: "Roboto Italic", Arial, sans-serif;
+    font-style: italic;
+    font-weight: normal;
 }
