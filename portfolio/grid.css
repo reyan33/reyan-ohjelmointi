@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+
+    grid-template-columns: 3fr 1fr; /* aside smaller, main bigger */
+    grid-template-rows: 3em auto 3em;
+
+    font-family: Arial, sans-serif;
+}
+
+header {
+    grid-area: header;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #e0e0e0;
+    padding: 1em;
+}
+
+main {
+    grid-area: main;
+    padding: 1em;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+footer a { 
+    color: white; 
+    text-decoration: none; 
+    margin: 0 0.5em;
+}
+
+footer a:hover { 
+    text-decoration: underline; 
+}
+
+
+nav .card {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+    padding: 1em;
+    background-color: #fff3e6;
+    border: 1px solid #e86a33;
+    border-top: 4px solid #e86a33;
+
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+nav .card:hover {
+    background-color: #ccc;
+}
+nav {
+    margin-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+nav a {
+    display: flex;  
+    flex-direction: column;
+    background-color: #fff3e6;     
+    border: 1px solid #e86a33;   
+   
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+                
+    border-top: 4px solid #e86a33; 
+    border-radius: 15px;  
+         
+               
+     
+    margin: 0 auto 1.5rem;    
+   
+}
+nav img {
+    width: 200px;               
+    height: auto;
+}
+
+
+
+nav a:hover {
+    background-color: #ccc;
+}
