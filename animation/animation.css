@@ -1,0 +1,113 @@
+/* ===== General ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* ===== Spinner ===== */
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid lightgray;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-top: 20px;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* ===== Moving Box ===== */
+.container {
+    position: relative;
+    width: 400px;
+    height: 60px;
+    border: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    position: absolute;
+    animation: moveLinear 2s linear 0s 1,
+               moveEaseIn 2s ease-in 2s 1,
+               moveEaseInOut 2s ease-in-out 4s 1;
+}
+
+/* Linear animation */
+@keyframes moveLinear {
+    from { left: 0; }
+    to { left: 350px; }
+}
+
+/* Ease-in animation */
+@keyframes moveEaseIn {
+    from { left: 0; }
+    to { left: 350px; }
+}
+
+/* Ease-in-out animation */
+@keyframes moveEaseInOut {
+    from { left: 0; }
+    to { left: 350px; }
+}
+
+/* ===== Progress Bar ===== */
+.progress-bar {
+    width: 400px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background-color: #3498db;
+    animation: load 3s linear infinite;
+}
+
+@keyframes load {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* ===== Pulsing Loader ===== */
+.pulse-loader {
+    width: 40px;
+    height: 40px;
+    background-color: #3498db;
+    border-radius: 50%;
+    animation: pulse 1s infinite;
+    margin-top: 20px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.5); opacity: 0.6; }
+    100% { transform: scale(1); opacity: 1; }
+}
+.loader {
+    width: 500px; 
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.loader img {
+    width: auto;
+    height: 500px; 
+}
