@@ -6,11 +6,16 @@
 }
 
 body {
-  background: #f5efe6;
+  /*background: #f5efe6;*/
+  background-image: url('imagebg.png'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
   display: flex;
   justify-content: center;
   padding: 2rem;
   font-family: sans-serif;
+ background-attachment: fixed;
 }
 
 .container {
@@ -154,6 +159,8 @@ main section {
   }
 }
 footer {
+  background-image: url('imagefooter.gif'); 
+  background-repeat: repeat; 
   text-align: center;
   padding: 1rem 0;
 }
@@ -181,3 +188,5 @@ textarea:focus,
 select:focus {
   background-color: #fff9c4; 
 }
+
+
