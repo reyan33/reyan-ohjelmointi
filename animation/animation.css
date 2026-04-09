@@ -1,4 +1,3 @@
-/* ===== General ===== */
 body {
     font-family: Arial, sans-serif;
     margin: 30px;
@@ -8,7 +7,6 @@ section {
     margin-bottom: 40px;
 }
 
-/* ===== Spinner ===== */
 .spinner {
     width: 60px;
     height: 60px;
@@ -24,7 +22,7 @@ section {
     to { transform: rotate(360deg); }
 }
 
-/* ===== Moving Box ===== */
+
 .container {
     position: relative;
     width: 400px;
@@ -43,7 +41,6 @@ section {
                moveEaseInOut 2s ease-in-out 4s 1;
 }
 
-/* Linear animation */
 @keyframes moveLinear {
     from { left: 0; }
     to { left: 350px; }
@@ -61,7 +58,7 @@ section {
     to { left: 350px; }
 }
 
-/* ===== Progress Bar ===== */
+
 .progress-bar {
     width: 400px;
     height: 20px;
@@ -83,7 +80,6 @@ section {
     to { width: 100%; }
 }
 
-/* ===== Pulsing Loader ===== */
 .pulse-loader {
     width: 40px;
     height: 40px;
