@@ -189,4 +189,34 @@ select:focus {
   background-color: #fff9c4; 
 }
 
+@media (max-width: 640px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  body {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  h1 { font-size: 32px; }
+  h2 { font-size: 26px; }
+  h3 { font-size: 22px; }
+}
+
+@media (min-width: 640px) {
+
+  body {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+
+  header nav {
+    flex-direction: row;
+  }
+
+  h1 { font-size: 60px; }
+  h2 { font-size: 48px; }
+  h3 { font-size: 32px; }
+}
