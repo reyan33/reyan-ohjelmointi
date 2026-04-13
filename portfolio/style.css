@@ -220,3 +220,16 @@ select:focus {
   h2 { font-size: 48px; }
   h3 { font-size: 32px; }
 }
+button {
+  background-color: #fff3e6;     
+  border: 1px solid #e86a33;    
+  border-radius: 10px;            
+  padding: 0.5rem 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #e86a33;     
+}
