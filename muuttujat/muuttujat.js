@@ -22,6 +22,7 @@ function jako(x, y) {
     alert(x / y);
 }
 
+ // input
 function laskin_summa() {
     let eka = Number(document.getElementById("numero1").value);
     let toka = Number(document.getElementById("numero2").value);
