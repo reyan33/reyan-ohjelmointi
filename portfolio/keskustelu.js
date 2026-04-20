@@ -30,11 +30,17 @@ closeBtn.addEventListener("click", () => dialog.close());
 function send(e) {
     e.preventDefault();
 
-    let birthday = document.getElementById("paiva").value;
-    let email = document.getElementById("email").value;
-    let type = document.getElementById("type").value;
-    let usage = document.getElementById("check").checked;
-    let body = document.getElementById("message").value;
+    const birthdayField = document.getElementById("paiva");
+    const emailField = document.getElementById("email");
+    const typeField = document.getElementById("type");
+    const usageField = document.getElementById("check");
+    const bodyField = document.getElementById("message");
+
+    const birthday = birthdayField.value;
+    const email = emailField.value;
+    const type = typeField.value;
+    const usage = usageField.checked;
+    const body = bodyField.value;
 
     console.log("birthday:", birthday);
     console.log("email:", email);
