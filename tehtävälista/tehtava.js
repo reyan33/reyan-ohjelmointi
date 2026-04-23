@@ -9,6 +9,7 @@ function update (){
         ul.innerHTML = html;
     })
 }
+/*
 update();
 
 function addTask() {
@@ -18,4 +19,26 @@ function addTask() {
     list.push(input.value);
     update();
     input.value = "";
+}
+
+*/
+update();
+
+function addTask() {
+    const input = document.getElementById("taskInput");
+    const countInput = document.getElementById("countInput");
+
+    const value = input.value.trim();
+    const count = parseInt(countInput.value);
+
+    if (value === "" || !count || count <= 0) return;
+
+    for (let i = 0; i < count; i++) {
+        list.push(value);
+    }
+
+    update();
+
+    input.value = "";
+    countInput.value = "";
 }
