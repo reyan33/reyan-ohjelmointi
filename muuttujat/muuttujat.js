@@ -1,3 +1,4 @@
+console.log("JS loaded");
 // muuttujat
 let a = 3;
 let b = 5;
