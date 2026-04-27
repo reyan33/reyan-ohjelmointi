@@ -47,14 +47,14 @@ function luoRivit() {
 
         let ika = document.createElement("td");
         if (henkilo.age >= 18) {
-            ika.innerHTML = henkilo.age + " 🍺 ";
+            ika.innerHTML = henkilo.age + " \u{1F37A} ";
         } else {
             ika.innerHTML = henkilo.age;
         }
 
         let tyo = document.createElement("td");
         if (henkilo.job === "Opiskelija") {
-            tyo.innerHTML = henkilo.job + " 🎓 ";
+            tyo.innerHTML = henkilo.job + " \u{1F393} ";
         } else {
             tyo.innerHTML = henkilo.job;
         }
