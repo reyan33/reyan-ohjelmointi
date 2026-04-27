@@ -56,3 +56,9 @@ tbody tr {
 tbody tr:hover {
   background-color: #fff3e6;
 }
+h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #e86a33;
+  font-size: 1.5rem;
+}
