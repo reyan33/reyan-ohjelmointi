@@ -78,3 +78,89 @@ function naytaPaivamaara() {
     document.getElementById("viikonpaiva").innerText = viikonpaiva;
     document.getElementById("kuukausi").innerText = kuukausi;
 }
+
+// SETS
+ 
+
+const veijo = new Set(["luku", "poisto"]);
+const elvira = new Set(["luku", "kirjoitus", "muokkaus"]);
+const mehdi = new Set(["luku", "muokkaus", "poisto"]);
+const tuuli = new Set(["kirjoitus", "poisto"]);
+
+
+
+function show(set, id) {
+    const element = document.getElementById(id);
+
+    const ul = element.querySelector("ul") || element;
+
+    ul.innerHTML = "";
+
+    for (let item of set) {
+        ul.innerHTML += `<li>${item}</li>`;
+    }
+}
+// Show User
+
+show(veijo, "veijo");
+show(elvira, "elvira");
+show(mehdi, "mehdi");
+show(tuuli, "tuuli");
+
+
+// Veijo + Tuuli
+
+const veijotuuli = new Set();
+
+for (let item of veijo) {
+    veijotuuli.add(item);
+}
+
+for (let item of tuuli) {
+    veijotuuli.add(item);
+}
+// Mehdi & Elvira
+
+const mehdielvira = new Set();
+for (let item of mehdi) {
+    if (elvira.has(item)) {
+        mehdielvira.add(item);
+    }
+}
+
+// Elvira vs Tuuli
+
+const elviratuuli = new Set();
+
+for (let item of elvira) {
+    if (!tuuli.has(item)) {
+        elviratuuli.add(item);
+    }
+}
+
+for (let item of tuuli) {
+    if (!elvira.has(item)) {
+        elviratuuli.add(item);
+    }
+}
+
+
+/*
+function showList(set, id) {
+    const ul = document.getElementById(id);
+    ul.innerHTML = "";
+
+    for (let item of set) {
+        ul.innerHTML += `<li>${item}</li>`;
+    }
+}
+showList(veijotuuli, "veijotuuli");
+showList(mehdielvira, "mehdielvira");
+showList(elviratuuli, "elviratuuli");
+*/
+
+// Show result
+
+show(veijotuuli, "veijotuuli");
+show(mehdielvira, "mehdielvira");
+show(elviratuuli, "elviratuuli");
