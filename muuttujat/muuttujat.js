@@ -7,98 +7,148 @@ let d = 15;
 
 // functions
 
-function summa(x,  y) {
-    alert(x + y);
+function summa(x, y) {
+  alert(x + y);
 }
 
 function vahennys(x, y) {
-    alert(x - y);
+  alert(x - y);
 }
 
 function kerto(x, y) {
-    alert(x * y);
+  alert(x * y);
 }
 
 function jako(x, y) {
-    alert(x / y);
+  if (y === 0) {
+    alert("Cannot divide by zero");
+    return;
+  }
+  alert(x / y);
 }
 
- // input
+// input
 function laskin_summa() {
-    let eka = Number(document.getElementById("numero1").value);
-    let toka = Number(document.getElementById("numero2").value);
+  let eka = Number(document.getElementById("numero1").value);
+  let toka = Number(document.getElementById("numero2").value);
 
-    summa(eka, toka);
+  summa(eka, toka);
 }
 
 function laskin_vahennys() {
-    let eka = Number(document.getElementById("numero1").value);
-    let toka = Number(document.getElementById("numero2").value);
+  let eka = Number(document.getElementById("numero1").value);
+  let toka = Number(document.getElementById("numero2").value);
 
-    vahennys(eka, toka);
+  vahennys(eka, toka);
 }
 
 function laskin_kerto() {
-    let eka = Number(document.getElementById("numero1").value);
-    let toka = Number(document.getElementById("numero2").value);
+  let eka = Number(document.getElementById("numero1").value);
+  let toka = Number(document.getElementById("numero2").value);
 
-    kerto(eka, toka);
+  kerto(eka, toka);
 }
 
 function laskin_jako() {
-    let eka = Number(document.getElementById("numero1").value);
-    let toka = Number(document.getElementById("numero2").value);
+  let eka = Number(document.getElementById("numero1").value);
+  let toka = Number(document.getElementById("numero2").value);
 
-    jako(eka, toka);
+  jako(eka, toka);
+}
+
+// Math-objekti
+
+function abs() {
+  let eka = Number(document.getElementById("numero1").value);
+  alert(Math.abs(eka));
+}
+
+function sqrt() {
+  let eka = Number(document.getElementById("numero1").value);
+  alert(Math.sqrt(eka));
+}
+
+function pow() {
+  let eka = Number(document.getElementById("numero1").value);
+  let toka = Number(document.getElementById("numero2").value);
+  alert(Math.pow(eka, toka));
+}
+
+function max() {
+  let eka = Number(document.getElementById("numero1").value);
+  let toka = Number(document.getElementById("numero2").value);
+  alert(Math.max(eka, toka));
+}
+
+function min() {
+  let eka = Number(document.getElementById("numero1").value);
+  let toka = Number(document.getElementById("numero2").value);
+  alert(Math.min(eka, toka));
+}
+
+function round() {
+  let eka = Number(document.getElementById("numero1").value);
+  alert(Math.round(eka));
 }
 
 function naytaPaivamaara() {
-    const nyt = new Date();
+  const nyt = new Date();
 
-    const paivamaara = nyt.toLocaleDateString('fi-FI');
-    const aika = nyt.toLocaleTimeString('fi-FI');
-    const paivaJaAika = paivamaara + " klo " + aika;
+  const paivamaara = nyt.toLocaleDateString("fi-FI");
+  const aika = nyt.toLocaleTimeString("fi-FI");
+  const paivaJaAika = paivamaara + " klo " + aika;
 
-    const viikonpaivat = [
-        "sunnuntai", "maanantai", "tiistai",
-        "keskiviikko", "torstai", "perjantai", "lauantai"
-    ];
-    const viikonpaiva = viikonpaivat[nyt.getDay()];
+  const viikonpaivat = [
+    "sunnuntai",
+    "maanantai",
+    "tiistai",
+    "keskiviikko",
+    "torstai",
+    "perjantai",
+    "lauantai",
+  ];
+  const viikonpaiva = viikonpaivat[nyt.getDay()];
 
-    const kuukaudet = [
-        "tammikuu", "helmikuu", "maaliskuu", "huhtikuu",
-        "toukokuu", "kesäkuu", "heinäkuu", "elokuu",
-        "syyskuu", "lokakuu", "marraskuu", "joulukuu"
-    ];
-    const kuukausi = kuukaudet[nyt.getMonth()];
+  const kuukaudet = [
+    "tammikuu",
+    "helmikuu",
+    "maaliskuu",
+    "huhtikuu",
+    "toukokuu",
+    "kesäkuu",
+    "heinäkuu",
+    "elokuu",
+    "syyskuu",
+    "lokakuu",
+    "marraskuu",
+    "joulukuu",
+  ];
+  const kuukausi = kuukaudet[nyt.getMonth()];
 
-    document.getElementById("paivamaara").innerText = paivamaara;
-    document.getElementById("aika").innerText = aika;
-    document.getElementById("paivaJaAika").innerText = paivaJaAika;
-    document.getElementById("viikonpaiva").innerText = viikonpaiva;
-    document.getElementById("kuukausi").innerText = kuukausi;
+  document.getElementById("paivamaara").innerText = paivamaara;
+  document.getElementById("aika").innerText = aika;
+  document.getElementById("paivaJaAika").innerText = paivaJaAika;
+  document.getElementById("viikonpaiva").innerText = viikonpaiva;
+  document.getElementById("kuukausi").innerText = kuukausi;
 }
 
 // SETS
- 
 
 const veijo = new Set(["luku", "poisto"]);
 const elvira = new Set(["luku", "kirjoitus", "muokkaus"]);
 const mehdi = new Set(["luku", "muokkaus", "poisto"]);
 const tuuli = new Set(["kirjoitus", "poisto"]);
 
-
-
 function show(set, id) {
-    const element = document.getElementById(id);
+  const element = document.getElementById(id);
 
-    const ul = element.querySelector("ul") || element;
+  const ul = element.querySelector("ul") || element;
 
-    ul.innerHTML = "";
+  ul.innerHTML = "";
 
-    for (let item of set) {
-        ul.innerHTML += `<li>${item}</li>`;
-    }
+  for (let item of set) {
+    ul.innerHTML += `<li>${item}</li>`;
+  }
 }
 // Show User
 
@@ -107,25 +157,24 @@ show(elvira, "elvira");
 show(mehdi, "mehdi");
 show(tuuli, "tuuli");
 
-
 // Veijo + Tuuli
 
 const veijotuuli = new Set();
 
 for (let item of veijo) {
-    veijotuuli.add(item);
+  veijotuuli.add(item);
 }
 
 for (let item of tuuli) {
-    veijotuuli.add(item);
+  veijotuuli.add(item);
 }
 // Mehdi & Elvira
 
 const mehdielvira = new Set();
 for (let item of mehdi) {
-    if (elvira.has(item)) {
-        mehdielvira.add(item);
-    }
+  if (elvira.has(item)) {
+    mehdielvira.add(item);
+  }
 }
 
 // Elvira vs Tuuli
@@ -133,17 +182,16 @@ for (let item of mehdi) {
 const elviratuuli = new Set();
 
 for (let item of elvira) {
-    if (!tuuli.has(item)) {
-        elviratuuli.add(item);
-    }
+  if (!tuuli.has(item)) {
+    elviratuuli.add(item);
+  }
 }
 
 for (let item of tuuli) {
-    if (!elvira.has(item)) {
-        elviratuuli.add(item);
-    }
+  if (!elvira.has(item)) {
+    elviratuuli.add(item);
+  }
 }
-
 
 /*
 function showList(set, id) {
@@ -159,7 +207,7 @@ showList(mehdielvira, "mehdielvira");
 showList(elviratuuli, "elviratuuli");
 */
 
-// Show result
+// Show list result
 
 show(veijotuuli, "veijotuuli");
 show(mehdielvira, "mehdielvira");

@@ -1,91 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fi">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Muuttujia ja tietotyyppejä</title>
-    <link rel="stylesheet" href="../portfolio/style.css">
-    <link rel="stylesheet" href="muuttuujat.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../portfolio/style.css" />
+    <link rel="stylesheet" href="muuttuujat.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Muuttujia ja tietotyyppejä</h1>
 
-<main class="container">
-
-    <h1>Muuttujia ja tietotyyppejä</h1>
-
-    <section>
+      <section>
         <h2>Muuttujat</h2>
 
         <button onclick="summa()">Summa</button>
         <button onclick="vahennys()">Vähennys</button>
         <button onclick="kerto()">Kerto</button>
         <button onclick="jako()">Jako</button>
-    </section>
-    
-    <hr>
+      </section>
 
-    <section>
+      <hr />
 
-    <h2>Laskin</h2>
+      <section>
+        <h2>Laskin</h2>
 
-    <input type="number" id="numero1" placeholder="Ensimmäinen numero">
-    <input type="number" id="numero2" placeholder="Toinen numero">
+        <input type="number" id="numero1" placeholder="Ensimmäinen numero" />
+        <input type="number" id="numero2" placeholder="Toinen numero" />
 
-    <br><br>
+        <br /><br />
 
-    <button onclick="laskin_summa()">+</button>
-    <button onclick="laskin_vahennys()">-</button>
-    <button onclick="laskin_kerto()">*</button>
-    <button onclick="laskin_jako()">/</button>
-</section>
+        <button onclick="laskin_summa()">+</button>
+        <button onclick="laskin_vahennys()">-</button>
+        <button onclick="laskin_kerto()">*</button>
+        <button onclick="laskin_jako()">/</button>
+        <button onclick="abs()">Abs</button>
+        <button onclick="sqrt()">Sqrt</button>
+        <button onclick="pow()">Pow</button>
+        <button onclick="max()">Max</button>
+        <button onclick="min()">Min</button>
+        <button onclick="round()">Round</button>
+      </section>
 
-<hr>
+      <hr />
 
-<section>
-    <h2>Päivämäärä</h2>
+      <section>
+        <h2>Päivämäärä</h2>
 
-    <button onclick="naytaPaivamaara()">Näytä päivämäärä</button>
+        <button onclick="naytaPaivamaara()">Näytä päivämäärä</button>
 
-    <div id="paivamaara"></div>
-    <div id="aika"></div>
-    <div id="paivaJaAika"></div>
-    <div id="viikonpaiva"></div>
-    <div id="kuukausi"></div>
-</section>
+        <div id="paivamaara"></div>
+        <div id="aika"></div>
+        <div id="paivaJaAika"></div>
+        <div id="viikonpaiva"></div>
+        <div id="kuukausi"></div>
+      </section>
 
-<hr>
+      <hr />
 
-<section id="veijo">
-    <h2>Veijo</h2>
-    <ul></ul>
-</section>
+      <section id="veijo">
+        <h2>Veijo</h2>
+        <ul></ul>
+      </section>
 
-<section id="elvira">
-    <h2>Elvira</h2>
-    <ul></ul>
-</section>
+      <section id="elvira">
+        <h2>Elvira</h2>
+        <ul></ul>
+      </section>
 
-<section id="mehdi">
-    <h2>Mehdi</h2>
-    <ul></ul>
-</section>
+      <section id="mehdi">
+        <h2>Mehdi</h2>
+        <ul></ul>
+      </section>
 
-<section id="tuuli">
-    <h2>Tuuli</h2>
-    <ul></ul>
-</section>
+      <section id="tuuli">
+        <h2>Tuuli</h2>
+        <ul></ul>
+      </section>
 
-<h3>Veijo + Tuuli</h3>
-<ul id="veijotuuli"></ul>
+      <h3>Veijo + Tuuli</h3>
+      <ul id="veijotuuli"></ul>
 
-<h3>Mehdi & Elvira</h3>
-<ul id="mehdielvira"></ul>
+      <h3>Mehdi & Elvira</h3>
+      <ul id="mehdielvira"></ul>
 
-<h3>Elvira vs Tuuli</h3>
-<ul id="elviratuuli"></ul>
+      <h3>Elvira vs Tuuli</h3>
+      <ul id="elviratuuli"></ul>
+    </main>
 
-</main>
-
-<script src="muuttujat.js" defer></script>
-
-</body>
+    <script src="muuttujat.js" defer></script>
+  </body>
 </html>
