@@ -10,8 +10,6 @@ let d = 15;
 function summa(x, y) {
   alert(x + y);
 }
-o;
-
 function vahennys(x, y) {
   alert(x - y);
 }
