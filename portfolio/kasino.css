@@ -1,0 +1,31 @@
+#noppa,
+#lotto {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #fff8f2;
+  border-left: 4px solid #e86a33;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #e86a33;
+  font-size: 1.5rem;
+}
+.lotto-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.lotto-inputs input[type="number"] {
+  width: 60px;
+  padding: 0.5rem;
+  border: 2px solid #e86a33;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+}

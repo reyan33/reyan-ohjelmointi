@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kasino</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="kasino.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>Kasino</h1>
+
+      <header>
+        <nav>
+          <button><a href="index.html">Portfolio</a></button>
+          <button><a href="./grid.html">Takaisin Etusivuun</a></button>
+        </nav>
+      </header>
+
+      <hr />
+
+      <h2>Noppa</h2>
+
+      <button onclick="heitanoppa()">Noppa</button>
+
+      <div id="noppa"></div>
+      <hr />
+
+      <h2>Lotto</h2>
+      <h3>Arvaa 7 numeroa (1–40)</h3>
+
+      <div class="lotto-inputs">
+        <input type="number" id="a" />
+        <input type="number" id="b" />
+        <input type="number" id="c" />
+        <input type="number" id="d" />
+        <input type="number" id="e" />
+        <input type="number" id="f" />
+        <input type="number" id="g" />
+      </div>
+
+      <button onclick="arvolotto()">Lotto</button>
+
+      <div id="lotto"></div>
+      <div id="tulos"></div>
+    </main>
+
+    <script src="kasino.js"></script>
+  </body>
+</html>

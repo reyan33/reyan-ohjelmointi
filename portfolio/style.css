@@ -7,21 +7,21 @@
 
 body {
   /*background: #f5efe6;*/
-  background-image: url('imagebg.png'); 
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  background-position: center; 
+  background-image: url("imagebg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: center;
   padding: 2rem;
   font-family: sans-serif;
- background-attachment: fixed;
+  background-attachment: fixed;
 }
 
 .container {
   background-color: white;
   border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 700px;
   padding: 2rem;
@@ -38,15 +38,15 @@ body {
 .header img {
   width: 150px;
   height: 150px;
-  border-radius: 50%;    
-  object-fit: cover;        
+  border-radius: 50%;
+  object-fit: cover;
 }
 hr {
-  border: none;               
-  height: 4px;               
-  background-color: #e86a33;  
-  border-radius: 2px;        
-  margin: 25px 0;             
+  border: none;
+  height: 4px;
+  background-color: #e86a33;
+  border-radius: 2px;
+  margin: 25px 0;
 }
 
 h1 {
@@ -71,73 +71,72 @@ p {
 }
 
 ul {
-  list-style: none;   
-  padding-left: 0;   
+  list-style: none;
+  padding-left: 0;
 }
 
 ul li::before {
-  content: "➤";     
-  color: #e86a33;     
+  content: "➤";
+  color: #e86a33;
   display: inline-block;
-  width: 1.5em;       
+  width: 1.5em;
 }
 ul li span {
   color: #e86a33;
   margin-left: 10px;
 }
 
-
-a{
-  color: #0645AD;                
-  text-decoration: none;         
-  transition: all 0.3s ease;    
-  cursor: pointer;               
+a {
+  color: #0645ad;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 a:hover {
-  text-decoration: underline;  
-  color: #0B0080;   
-  transform: translateX(3px);  
-}  
+  text-decoration: underline;
+  color: #0b0080;
+  transform: translateX(3px);
+}
 
 header nav {
   display: flex;
-  justify-content: center; 
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
   margin-bottom: 2rem;
 }
+
 header nav button {
-  background-color: #fff3e6;     
-  border: 1px solid #e86a33;    
-  border-radius: 10px;            
+  background-color: #fff3e6;
+  border: 1px solid #e86a33;
+  border-radius: 10px;
   padding: 0.5rem 1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 header nav button:hover {
-  background-color: #e86a33;     
+  background-color: #e86a33;
 }
 
-header nav button a  {
+header nav button a {
   font-weight: bold;
-  color: #e86a33; 
+  color: #e86a33;
   text-decoration: none;
-  display: block;  
+  display: block;
   transition: all 0.3s ease;
 }
 
 header nav button:hover a {
-  color:white;
+  color: white;
   transform: translateY(-2px);
 }
-
 
 article {
   margin-bottom: 1.5rem;
 }
-
 
 main section {
   margin-bottom: 1.5rem;
@@ -159,8 +158,8 @@ main section {
   }
 }
 footer {
-  background-image: url('imagefooter.gif'); 
-  background-repeat: repeat; 
+  background-image: url("imagefooter.gif");
+  background-repeat: repeat;
   text-align: center;
   padding: 1rem 0;
 }
@@ -186,7 +185,7 @@ details p {
 input:focus,
 textarea:focus,
 select:focus {
-  background-color: #fff9c4; 
+  background-color: #fff9c4;
 }
 
 @media (max-width: 640px) {
@@ -200,13 +199,18 @@ select:focus {
     margin-right: 16px;
   }
 
-  h1 { font-size: 32px; }
-  h2 { font-size: 26px; }
-  h3 { font-size: 22px; }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 22px;
+  }
 }
 
 @media (min-width: 640px) {
-
   body {
     margin-left: 64px;
     margin-right: 64px;
@@ -216,20 +220,26 @@ select:focus {
     flex-direction: row;
   }
 
-  h1 { font-size: 60px; }
-  h2 { font-size: 48px; }
-  h3 { font-size: 32px; }
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  h3 {
+    font-size: 32px;
+  }
 }
 button {
-  background-color: #fff3e6;     
-  border: 1px solid #e86a33;    
-  border-radius: 10px;            
+  background-color: #fff3e6;
+  border: 1px solid #e86a33;
+  border-radius: 10px;
   padding: 0.5rem 1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: #e86a33;     
+  background-color: #e86a33;
 }
