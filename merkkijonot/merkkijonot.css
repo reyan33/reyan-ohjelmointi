@@ -1,0 +1,25 @@
+input {
+  padding: 0.6rem;
+  margin: 0.4rem;
+  border: 2px solid #e86a33;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input:focus {
+  background-color: #fff3e6;
+  outline: none;
+}
+
+button {
+  margin-top: 0.5rem;
+}
+
+div,
+ul {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background-color: #fff8f2;
+  border-left: 4px solid #e86a33;
+  border-radius: 6px;
+}
