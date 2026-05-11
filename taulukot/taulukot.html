@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Taulukot</title>
+    <link rel="stylesheet" href="../portfolio/style.css" />
+    <link rel="stylesheet" href="../merkkijonot/merkkijonot.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>Taulukot</h1>
+
+      <hr />
+
+      <!-- Poimi elementti -->
+      <h2>Poimi elementti</h2>
+
+      <input type="number" id="index" placeholder="Anna indeksi" />
+      <button onclick="poimiElementti()">Näytä</button>
+
+      <div id="tulos1"></div>
+
+      <hr />
+
+      <!-- Löydä indeksi -->
+      <h2>Löydä indeksi</h2>
+
+      <input type="text" id="sana" placeholder="Anna sana" />
+      <button onclick="loydaIndeksi()">Näytä</button>
+
+      <div id="tulos2"></div>
+
+      <hr />
+
+      <!-- Leikkaa taulukko -->
+      <h2>Leikkaa taulukko</h2>
+
+      <input type="number" id="alku" placeholder="1st no" />
+      <input type="number" id="loppu" placeholder="2nd no" />
+
+      <button onclick="leikkaaTaulukko()">Näytä</button>
+
+      <ul id="tulos3"></ul>
+
+      <hr />
+
+      <!-- Järjestä -->
+      <h2>Järjestä</h2>
+
+      <button onclick="tulostaSanat()">Tulosta tekstit</button>
+      <button onclick="jarjestaSanat()">Järjestä tekstit</button>
+      <button onclick="kaannaSanat()">Käännä tekstien järjestys</button>
+
+      <br /><br />
+
+      <button onclick="tulostaNumerot()">Tulosta numerot</button>
+      <button onclick="jarjestaNumerot()">Järjestä numerot</button>
+      <button onclick="kaannaNumerot()">Käännä numeroiden järjestys</button>
+
+      <ul id="tulos4"></ul>
+
+      <hr />
+
+      <!-- Suodata -->
+      <h2>Suodata</h2>
+
+      <input type="number" id="luku" placeholder="Anna luku" />
+
+      <button onclick="tulostaSuodatetut()">Tulosta numerot</button>
+      <button onclick="suuremmat()">Valitse suuremmat</button>
+      <button onclick="pienemmat()">Valitse pienemmät</button>
+
+      <ul id="tulos5"></ul>
+    </main>
+
+    <script src="taulukot.js"></script>
+  </body>
+</html>
