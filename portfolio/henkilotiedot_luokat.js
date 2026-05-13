@@ -1,6 +1,4 @@
-console.log("Luokat loaded");
-
-// 1. CLASS
+//  CLASS
 class Person {
   constructor(name, age, job, driversLicense) {
     this.name = name;
@@ -18,7 +16,7 @@ class Person {
   }
 }
 
-// 2. INITIAL DATA
+//  INITIAL DATA
 let persons = [
   new Person("Merja Meikäläinen", 17, "Opiskelija", true),
   new Person("Teppo Teikäläinen", 25, "Sähköteknikko", true),
@@ -27,10 +25,8 @@ let persons = [
   new Person("Tomas Täkäläinen", 22, "Linja-autonkuljettaja", true),
 ];
 
-// 3. TABLE BODY
 let rivit = document.getElementById("rivit");
 
-// 4. DRAW TABLE
 function luoRivit() {
   rivit.innerHTML = "";
 
@@ -62,7 +58,6 @@ function luoRivit() {
   }
 }
 
-// 5. ADD NEW PERSON
 function lisaaHenkilo() {
   let nimi = document.getElementById("nimi").value;
   let ika = Number(document.getElementById("ika").value);
@@ -76,5 +71,4 @@ function lisaaHenkilo() {
   luoRivit();
 }
 
-// 6. INITIAL LOAD
 luoRivit();
