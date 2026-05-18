@@ -1,53 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Objekt-harjoitus</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="henkilötiedot.css">
-</head>
-<body>
-<div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objekt-harjoitus</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="henkilötiedot.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Henkilötiedot</h1>
+      <header>
+        <nav>
+          <button><a href="index.html">Portfolio</a></button>
+          <button><a href="cv.html">CV</a></button>
+          <button><a href="työkokemus.html">Työ kokemus</a></button>
+          <button><a href="media.html">Esittely video</a></button>
+          <button><a href="flex.html">Flex-harjoitus</a></button>
+          <button><a href="grid.html">Takaisin Etusivuun</a></button>
+          <button>
+            <a href="henkilotiedot_loukat.html">Henkilötiedot Loukat</a>
+          </button>
+          <button><a href="kasino.html">Kasino</a></button>
+          <button>
+            <a href="../merkkijonot/merkkijonot.html">Merkkijono</a>
+          </button>
+          <button><a href="../muuttujat/muuttujat.html">Muuttujat</a></button>
+          <button>
+            <a href="../tehtävälista/tehtävälista.html">Tehtävälista</a>
+          </button>
+          <button><a href="../taulukot/taulukot.html">Taulukot</a></button>
+        </nav>
+      </header>
 
-  <div class="header">
-    <h1>Henkilötiedot</h1>
+      <div class="table-box">
+        <table>
+          <thead>
+            <tr>
+              <th>Nimi</th>
+              <th>Ikä</th>
+              <th>Työ</th>
+              <th>Ajokortti</th>
+            </tr>
+          </thead>
+          <tbody id="rivit"></tbody>
+        </table>
+      </div>
+      <h3>Lisää henkilö</h3>
 
-    <a href="index.html">
-      <button>Takaisin Portfolioon</button>
-    </a>
-  </div>
+      <input type="text" id="nimi" placeholder="Nimi" />
+      <input type="number" id="ika" placeholder="Ikä" />
+      <input type="text" id="tyo" placeholder="Työ" />
 
-  <div class="table-box">
-    <table>
-      <thead>
-        <tr>
-          <th>Nimi</th>
-          <th>Ikä</th>
-          <th>Työ</th>
-          <th>Ajokortti</th>
-        </tr>
-      </thead>
-      <tbody id="rivit"></tbody>
-    </table>
-  </div>
-    <h3>Lisää henkilö</h3>
+      <label> <input type="checkbox" id="ajokortti" /> Ajokortti </label>
 
-  <input type="text" id="nimi" placeholder="Nimi">
-  <input type="number" id="ika" placeholder="Ikä">
-  <input type="text" id="tyo" placeholder="Työ">
+      <br /><br />
 
-  <label>
-    <input type="checkbox" id="ajokortti"> Ajokortti
-  </label>
+      <button onclick="lisaaHenkilo()">Lähetä</button>
+      <footer>
+        <p>© 2026 Reyan</p>
+      </footer>
+    </main>
 
-  <br><br>
-
-  <button onclick="lisaaHenkilo()">Lähetä</button>
-
-</div>
-
-<script src="henkilotiedot.js"></script>
-</body>
+    <script src="henkilotiedot.js"></script>
+  </body>
 </html>
-

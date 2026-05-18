@@ -10,14 +10,31 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="header">
-        <h1>Henkilötiedot luokilla</h1>
+    <main class="container">
+      <h1>Henkilötiedot luokilla</h1>
 
-        <a href="index.html">
-          <button>Takaisin Portfolioon</button>
-        </a>
-      </div>
+      <header>
+        <nav>
+          <button><a href="index.html">Portfolio </a></button>
+          <button><a href="cv.html">CV</a></button>
+          <button><a href="työkokemus.html">Työ kokemus</a></button>
+          <button><a href="media.html">Esittely video</a></button>
+          <button><a href="flex.html">Flex-harjoitus</a></button>
+          <button><a href="grid.html">Takaisin Etusivuun</a></button>
+          <button>
+            <a href="henkilotiedot.html">Henkilötiedot</a>
+          </button>
+          <button><a href="kasino.html">Kasino</a></button>
+          <button>
+            <a href="../merkkijonot/merkkijonot.html">Merkkijono</a>
+          </button>
+          <button><a href="../muuttujat/muuttujat.html">Muuttujat</a></button>
+          <button>
+            <a href="../tehtävälista/tehtävälista.html">Tehtävälista</a>
+          </button>
+          <button><a href="../taulukot/taulukot.html">Taulukot</a></button>
+        </nav>
+      </header>
 
       <div class="table-box">
         <table>
@@ -33,22 +50,22 @@
           <tbody id="rivit"></tbody>
         </table>
       </div>
-         <h3>Lisää henkilö</h3>
+      <h3>Lisää henkilö</h3>
 
-  <input type="text" id="nimi" placeholder="Nimi">
-  <input type="number" id="ika" placeholder="Ikä">
-  <input type="text" id="tyo" placeholder="Työ">
+      <input type="text" id="nimi" placeholder="Nimi" />
+      <input type="number" id="ika" placeholder="Ikä" />
+      <input type="text" id="tyo" placeholder="Työ" />
 
-  <label>
-    <input type="checkbox" id="ajokortti"> Ajokortti
-  </label>
+      <label> <input type="checkbox" id="ajokortti" /> Ajokortti </label>
 
-  <br><br>
+      <br /><br />
 
-  <button onclick="lisaaHenkilo()">Lähetä</button>
+      <button onclick="lisaaHenkilo()">Lähetä</button>
 
-</div>
-    </div>
+      <footer>
+        <p>© 2026 Reyan</p>
+      </footer>
+    </main>
 
     <script src="henkilotiedot_luokat.js"></script>
   </body>
