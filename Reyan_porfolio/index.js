@@ -1,4 +1,4 @@
-io; /* ── PAGE SWITCHING ── */
+/* ── PAGE SWITCHING ── */
 function showPage(id) {
   // hide all pages
   document
