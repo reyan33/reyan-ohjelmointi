@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reyan Ymer Ahmed — Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- BACKGROUND BLOBS -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- NAVBAR -->
+    <nav>
+      <button class="hamburger" onclick="toggleNav()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a data-page="work" onclick="showPage('work')">Kokemus</a></li>
+        <li><a data-page="skills" onclick="showPage('skills')">Taidot</a></li>
+        <li>
+          <a data-page="projects" onclick="showPage('projects')">Projektit</a>
+        </li>
+        <li>
+          <a data-page="education" onclick="showPage('education')">Koulutus</a>
+        </li>
+        <li><a data-page="extras" onclick="showPage('extras')">Muuta</a></li>
+        <li>
+          <a data-page="contact" onclick="showPage('contact')">Yhteystiedot</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- PAGE: HOME -->
+    <div class="page active" id="page-home">
+      <div class="hero-inner">
+        <div class="hero-photo-wrap">
+          <img src="photo.jpg" alt="Reyan Ymer Ahmed" class="hero-photo" />
+        </div>
+
+        <!-- RIGHT: TEXT -->
+        <div class="hero-text">
+          <div class="hero-tag" id="heroTag">
+            <span class="hero-tag-dot"></span>&nbsp;Haen harjoittelupaikkaa
+          </div>
+          <h1>Reyan<br /><span class="grad">Ymer Ahmed</span></h1>
+          <p class="hero-bio">
+            Olen motivoitunut ja teknologiasta kiinnostunut opiskelija, joka
+            opiskelee tieto- ja viestintätekniikkaa Turun ammatti-instituutissa
+            ja kehittää jatkuvasti ohjelmointitaitojaan. Tavoitteeni on kehittää
+            hyödyllisiä ja käyttäjäystävällisiä digitaalisia ratkaisuja
+            tulevaisuudessa.
+          </p>
+          <div class="hero-cta">
+            <button class="btn btn-primary" onclick="showPage('projects')">
+              Katso projektit →
+            </button>
+            <button class="btn btn-outline" onclick="showPage('contact')">
+              Ota yhteyttä
+            </button>
+          </div>
+        </div>
+
+        <!-- SECTION CARDS -->
+        <div class="home-grid" style="width: 100%">
+          <div class="home-card" onclick="showPage('work')">
+            <div class="home-card-icon">💼</div>
+            <div class="home-card-title">Työkokemus</div>
+            <div class="home-card-desc">
+              Vapaaehtoistyö ja käytännön harjoittelu
+            </div>
+            <div class="home-card-arrow">↗</div>
+          </div>
+          <div class="home-card" onclick="showPage('skills')">
+            <div class="home-card-icon">⚡</div>
+            <div class="home-card-title">Taidot</div>
+            <div class="home-card-desc">Tekniset ja yleiset taidot</div>
+            <div class="home-card-arrow">↗</div>
+          </div>
+          <div class="home-card" onclick="showPage('projects')">
+            <div class="home-card-icon">🚀</div>
+            <div class="home-card-title">Projektit</div>
+            <div class="home-card-desc">
+              Front-end sovellukset ja GitHub-projektit
+            </div>
+            <div class="home-card-arrow">↗</div>
+          </div>
+          <div class="home-card" onclick="showPage('education')">
+            <div class="home-card-icon">🎓</div>
+            <div class="home-card-title">Koulutus</div>
+            <div class="home-card-desc">
+              Opinnot Turun ammatti-instituutissa
+            </div>
+            <div class="home-card-arrow">↗</div>
+          </div>
+          <div class="home-card" onclick="showPage('extras')">
+            <div class="home-card-icon">🌍</div>
+            <div class="home-card-title">Kielet &amp; Harrastukset</div>
+            <div class="home-card-desc">
+              Monikielisyys ja vapaa-ajan aktiviteetit
+            </div>
+            <div class="home-card-arrow">↗</div>
+          </div>
+          <div class="home-card" onclick="showPage('contact')">
+            <div class="home-card-icon">✉️</div>
+            <div class="home-card-title">Yhteystiedot</div>
+            <div class="home-card-desc">Sähköposti ja GitHub</div>
+            <div class="home-card-arrow">↗</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE: WORK EXPERIENCE -->
+    <div class="page" id="page-work">
+      <div class="container">
+        <button class="back-btn" onclick="showPage('home')">
+          ← Takaisin etusivulle
+        </button>
+        <div class="page-header">
+          <p class="section-label">Kokemus</p>
+          <h2 class="section-title">Työkokemus</h2>
+        </div>
+        <div class="edu-timeline">
+          <div class="edu-item">
+            <div class="edu-period">07.2025 – Nykyinen</div>
+            <div class="edu-title">Vapaaehtoinen</div>
+            <div class="edu-school">KotiKunnas</div>
+            <p class="edu-desc">
+              Tuen asiakkaita arjessa vapaaehtoisena, erityisesti ulkoilussa ja
+              vapaa-ajan vietossa, sekä tarjoan tarvittaessa kevyttä
+              asiointiapua.
+            </p>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-period">02.2026 – Nykyinen</div>
+            <div class="edu-title">Vapaaehtoinen</div>
+            <div class="edu-school">Pelastusarmeija Turun osasto</div>
+            <p class="edu-desc">
+              Autan ihmisiä käytännön tehtävissä, kuten ruoan valmistuksessa ja
+              tarjoilussa kodittomille henkilöille. Toiminta on kehittänyt
+              yhteistyötaitojani, empatiakykyäni ja kykyä toimia paineen alla.
+            </p>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-period">Syksy 2024</div>
+            <div class="edu-title">Lastenhoitaja</div>
+            <div class="edu-school">Karhunaukion päiväkoti</div>
+            <p class="edu-desc">
+              Avustin lapsia päivittäisissä toiminnoissa ja leikeissä 2 viikon
+              ajan osana suomen kielen kurssia, huomioiden jokaisen lapsen
+              yksilölliset tarpeet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE: SKILLS -->
+    <div class="page" id="page-skills">
+      <div class="container">
+        <button class="back-btn" onclick="showPage('home')">
+          ← Takaisin etusivulle
+        </button>
+        <div class="page-header">
+          <p class="section-label">Osaaminen</p>
+          <h2 class="section-title">Taidot &amp; Työkalut</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <span class="skill-name">HTML / CSS</span
+            ><span class="skill-stars">★★★★★</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-name">JavaScript</span
+            ><span class="skill-stars">★★★★★</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-name">Ohjelmointi</span
+            ><span class="skill-stars">★★★★☆</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-name">Excel / Word / PPT</span
+            ><span class="skill-stars">★★★★★</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-name">Nopea oppiminen</span
+            ><span class="skill-stars">★★★★★</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-name">Asiakaspalvelu</span
+            ><span class="skill-stars">★★★★☆</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-name">Tiimityö</span
+            ><span class="skill-stars">★★★★★</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-name">Git / GitHub</span
+            ><span class="skill-stars">★★★★☆</span>
+          </div>
+          <div class="skill-card">
+            <span class="skill-name">React</span
+            ><span class="skill-stars">★★★★☆</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE: PROJECTS -->
+    <div class="page" id="page-projects">
+      <div class="container">
+        <button class="back-btn" onclick="showPage('home')">
+          ← Takaisin etusivulle
+        </button>
+        <div class="page-header">
+          <p class="section-label">Työnäytteet</p>
+          <h2 class="section-title">Projektit</h2>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-icon">💱</div>
+            <div class="project-title">Currency Converter</div>
+            <div class="project-sub">Valuuttamuunnin</div>
+            <p class="project-desc">
+              Verkkosovellus, jolla voi muuntaa valuuttoja reaaliaikaisesti.
+              Selkeä käyttöliittymä ja nopea toiminta.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span>
+              <span class="tag">JavaScript</span><span class="tag">API</span>
+            </div>
+            <a
+              href="https://github.com/reyan33/Front-end-project/tree/main/currency-coverter"
+              target="_blank"
+              class="project-link"
+              >GitHub →</a
+            >
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon">🧠</div>
+            <div class="project-title">Quiz Game</div>
+            <div class="project-sub">Tietovisa-sovellus</div>
+            <p class="project-desc">
+              Interaktiivinen tietovisapeli, jossa käyttäjä voi testata
+              tietojaan eri aiheista. Pisteytysjärjestelmä ja dynaaminen
+              sisältö.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span
+              ><span class="tag">JavaScript</span>
+            </div>
+            <a
+              href="https://github.com/reyan33/Front-end-project/tree/main/quiz-game"
+              target="_blank"
+              class="project-link"
+              >GitHub →</a
+            >
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon">🍽️</div>
+            <div class="project-title">Recipe Finder</div>
+            <div class="project-sub">Reseptihakusovellus</div>
+            <p class="project-desc">
+              Sovellus, jolla käyttäjä voi hakea reseptejä ainesosien
+              perusteella. Käyttää ulkoista API:a tulosten hakemiseen.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span>
+              <span class="tag">JavaScript</span
+              ><span class="tag">REST API</span>
+            </div>
+            <a
+              href="https://github.com/reyan33/Front-end-project/tree/main/recipe-finder"
+              target="_blank"
+              class="project-link"
+              >GitHub →</a
+            >
+          </div>
+
+          <div class="project-card" style="border-style: dashed">
+            <div class="project-icon">📁</div>
+            <div class="project-title">Muut Front-End projektit</div>
+            <div class="project-sub">GitHub Repository</div>
+            <p class="project-desc">
+              Lisää front-end projekteja löytyy yhdestä repositoriosta. Kaikki
+              on toteutettu HTML:llä, CSS:llä ja JavaScriptillä.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span
+              ><span class="tag">JavaScript</span>
+            </div>
+            <a
+              href="https://github.com/reyan33/Front-end-project"
+              target="_blank"
+              class="project-link"
+              >Katso kaikki →</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  EDUCATION -->
+    <div class="page" id="page-education">
+      <div class="container">
+        <button class="back-btn" onclick="showPage('home')">
+          ← Takaisin etusivulle
+        </button>
+        <div class="page-header">
+          <p class="section-label">Tausta</p>
+          <h2 class="section-title">Koulutus</h2>
+        </div>
+        <div class="edu-timeline">
+          <div class="edu-item">
+            <div class="edu-period">01.2024 – 12.2024</div>
+            <div class="edu-title">Aikuisten perusopetus</div>
+            <div class="edu-school">Turun ammatti-instituutti</div>
+            <p class="edu-desc">
+              Opiskelin suomen kielen perusopintoja ja kehitin lukemisen,
+              kirjoittamisen ja puhumisen taitoja arkipäivän tilanteissa.
+            </p>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-period">01.2025 – 06.2025</div>
+            <div class="edu-title">TUVA-koulutus</div>
+            <div class="edu-school">Turun ammatti-instituutti</div>
+            <p class="edu-desc">
+              Harjoittelin työelämävalmiuksia, itsenäistä työskentelyä,
+              yhteistyötaitoja, vastuullisuutta ja ongelmanratkaisukykyä.
+            </p>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-period">08.2025 – Nykyinen</div>
+            <div class="edu-title">
+              Tieto- ja viestintätekniikan perustutkinto
+            </div>
+            <div class="edu-school">Turun ammatti-instituutti</div>
+            <p class="edu-desc">
+              Opiskelen ICT-alaa suuntautuen ohjelmointiin ja verkkosivujen
+              kehittämiseen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  PAGE: EXTRAS -->
+    <div class="page" id="page-extras">
+      <div class="container">
+        <button class="back-btn" onclick="showPage('home')">
+          ← Takaisin etusivulle
+        </button>
+        <div class="page-header">
+          <p class="section-label">Lisätietoja</p>
+          <h2 class="section-title">Kielet &amp; Harrastukset</h2>
+        </div>
+        <div class="extras-grid">
+          <div class="extras-card">
+            <h3>🌍 Kielitaito</h3>
+            <ul class="extras-list">
+              <li>Amhara <span class="lang-level">Äidinkieli</span></li>
+              <li>Englanti <span class="lang-level">Erinomainen</span></li>
+              <li>Suomi <span class="lang-level">Hyvä</span></li>
+            </ul>
+          </div>
+
+          <div class="extras-card">
+            <h3>🎨 Harrastukset</h3>
+            <ul class="extras-list">
+              <li>Piirtäminen ja maalaaminen</li>
+              <li>Teknologian ja ohjelmoinnin oppiminen</li>
+              <li>Uusien kielten oppiminen</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAGE: CONTACT -->
+    <div class="page" id="page-contact">
+      <div class="container">
+        <button class="back-btn" onclick="showPage('home')">
+          ← Takaisin etusivulle
+        </button>
+        <div class="page-header">
+          <p class="section-label">Yhteys</p>
+          <h2 class="section-title">Yhteystiedot</h2>
+        </div>
+        <div class="contact-box">
+          <h2>Otetaan yhteyttä! 👋</h2>
+          <p>
+            Etsin harjoittelupaikkaa ja olen valmis oppimaan uutta. Ota yhteyttä
+            sähköpostitse tai GitHubin kautta.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:reyanyenate@gmail.com" class="btn btn-primary"
+              >✉️ reyanyenate@gmail.com</a
+            >
+            <a
+              href="https://github.com/reyan33"
+              target="_blank"
+              class="btn btn-outline"
+              >🐙 github.com/reyan33</a
+            >
+            <a href="tel:+358452527055" class="btn btn-outline"
+              >📞 +358 452527055</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2026 <span>Reyan Ymer Ahmed</span> — Kaikki oikeudet pidätetään</p>
+    </footer>
+
+    <script src="index.js" defer></script>
+  </body>
+</html>
