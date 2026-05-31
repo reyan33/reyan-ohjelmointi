@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Apu Nahasapeemapetilon</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="main-content">
+      <div class="title-row">
+        <img src="images/logo.svg" class="logo" />
+
+        <header>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="springfield.html">Springfield</a>
+            <a href="hahmo.html">Characters</a>
+            <a href="forum.html">Forum</a>
+          </nav>
+        </header>
+      </div>
+
+      <h1>Apu Nahasapeemapetilon</h1>
+
+      <!-- CHARACTER IMAGE -->
+      <div class="character-detail-layout">
+        <div class="character-photo-wrap">
+          <img
+            src="images/apu_e.png"
+            alt="Apu Nahasapeemapetilon"
+            class="character-photo"
+          />
+        </div>
+        <div class="character-detail-right">
+          <!-- TABS -->
+          <div class="tabs">
+            <button onclick="showTab('info')">Info</button>
+            <button onclick="showTab('memes')">Memes</button>
+          </div>
+
+          <!-- INFO -->
+          <section id="info" class="tab active">
+            <div class="info-top">
+              <div>
+                <h2>Apu Nahasapeemapetilon</h2>
+                <p>
+                  Apu is the hardworking owner of the Kwik-E-Mart convenience
+                  store. He is polite, clever, and always ready to help out
+                  customers in Springfield.
+                </p>
+              </div>
+              <div class="voice-actor-card">
+                <div class="actor-photo">
+                  <img src="images/HankA.png" alt="Hank Azaria / Apu" />
+                </div>
+                <div>
+                  <h3>Voice Actor</h3>
+                  <p>Hank Azaria</p>
+                  <a
+                    href="https://www.imdb.com/name/nm0000279/?ref_=fn_t_1"
+                    target="_blank"
+                  >
+                    IMDb Profile
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="audio-grid">
+              <h3>Audio clips</h3>
+              <div class="audio-row">
+                <audio controls>
+                  <source src="audio/Apu1.wav" type="audio/mpeg" />
+                </audio>
+                <audio controls>
+                  <source src="audio/Apu2.wav" type="audio/mpeg" />
+                </audio>
+              </div>
+            </div>
+          </section>
+
+          <!-- MEMES -->
+          <section id="memes" class="tab">
+            <div class="meme-grid">
+              <img src="memes/apu/image1.png" onclick="openMeme(this)" />
+              <img src="memes/apu/image2.png" onclick="openMeme(this)" />
+              <img src="memes/apu/image3.png" onclick="openMeme(this)" />
+              <img src="memes/apu/image4.png" onclick="openMeme(this)" />
+              <img src="memes/apu/image5.png" onclick="openMeme(this)" />
+            </div>
+
+            <div id="meme-viewer" onclick="closeMeme(event)"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="characters.js"></script>
+  </body>
+</html>

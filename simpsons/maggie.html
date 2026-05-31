@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Maggie Simpson</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="main-content">
+      <div class="title-row">
+        <img src="images/logo.svg" class="logo" />
+
+        <header>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="springfield.html">Springfield</a>
+            <a href="hahmo.html">Characters</a>
+            <a href="forum.html">Forum</a>
+          </nav>
+        </header>
+      </div>
+
+      <h1>Maggie Simpson</h1>
+
+      <!-- CHARACTER IMAGE -->
+      <div class="character-detail-layout">
+        <div class="character-photo-wrap">
+          <img
+            src="images/maggie_e.png"
+            alt="Maggie Simpson"
+            class="character-photo"
+          />
+        </div>
+        <div class="character-detail-right">
+          <!-- TABS -->
+          <div class="tabs">
+            <button onclick="showTab('info')">Info</button>
+            <button onclick="showTab('memes')">Memes</button>
+          </div>
+
+          <!-- INFO -->
+          <section id="info" class="tab active">
+            <div class="info-top">
+              <div>
+                <h2>Margaret "Maggie" Simpson</h2>
+                <p>
+                  Maggie Simpson is the baby of the family, often quiet but very
+                  expressive. She may be small, but she always has her pacifier
+                  and a surprising amount of personality.
+                </p>
+              </div>
+              <div class="voice-actor-card">
+                <div class="actor-photo">
+                  <img src="images/LindsayL.png" alt="Lindsay Lohan / Maggie" />
+                </div>
+                <div>
+                  <h3>Voice Actor</h3>
+                  <p>Lindsay Lohan</p>
+                  <a
+                    href="https://www.imdb.com/name/nm0517820/?ref_=fn_t_1"
+                    target="_blank"
+                  >
+                    IMDb Profile
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="audio-grid">
+              <h3>Audio clips</h3>
+              <div class="audio-row">
+                <audio controls>
+                  <source src="audio/maggie1.mp3" type="audio/mpeg" />
+                </audio>
+                <audio controls>
+                  <source src="audio/maggie2.mp3" type="audio/mpeg" />
+                </audio>
+              </div>
+            </div>
+          </section>
+
+          <!-- MEMES -->
+          <section id="memes" class="tab">
+            <div class="meme-grid">
+              <img src="memes/maggie/image1.png" onclick="openMeme(this)" />
+              <img src="memes/maggie/image2.png" onclick="openMeme(this)" />
+              <img src="memes/maggie/image3.png" onclick="openMeme(this)" />
+              <img src="memes/maggie/image4.png" onclick="openMeme(this)" />
+              <img src="memes/maggie/image5.png" onclick="openMeme(this)" />
+            </div>
+
+            <div id="meme-viewer" onclick="closeMeme(event)"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="characters.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simpsons Forum</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="forum.css" />
+  </head>
+
+  <body>
+    <main class="main-content">
+      <div class="title-row">
+        <img src="images/logo.svg" alt="Simpsons Logo" class="logo" />
+
+        <header>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="springfield.html">Springfield</a>
+            <a href="hahmo.html">Characters</a>
+            <a href="forum.html">Forum</a>
+          </nav>
+        </header>
+      </div>
+      <div class="page-header">
+        <p class="section-label">Keskustelupalsta</p>
+        <h1 class="section-title">Simpsons Forum</h1>
+      </div>
+
+      <!-- BUTTON -->
+      <button id="openDialogBtn" class="forum-btn">Luo viesti</button>
+
+      <!-- POSTS -->
+      <section id="messageList" class="message-list"></section>
+
+      <!-- DIALOG -->
+      <dialog id="messageDialog" class="forum-dialog">
+        <form id="messageForm">
+          <h2>Uusi viesti</h2>
+
+          <input
+            type="text"
+            id="sender"
+            placeholder="Lähettäjän nimi"
+            required
+          />
+
+          <input type="text" id="title" placeholder="Otsikko" required />
+
+          <textarea
+            id="content"
+            rows="6"
+            placeholder="Kirjoita viesti..."
+            required
+          ></textarea>
+
+          <div class="dialog-buttons">
+            <button type="button" id="cancelBtn" class="cancel-btn">
+              Peruuta
+            </button>
+
+            <button type="submit" class="send-btn">Lähetä</button>
+          </div>
+        </form>
+      </dialog>
+    </main>
+
+    <script src="forum.js"></script>
+  </body>
+</html>

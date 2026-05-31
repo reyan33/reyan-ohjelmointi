@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  background-color: #111827;
+  color: white;
+  font-family: sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+img {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.image-title {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #facc15;
+
+  min-height: 50px;
+}
+
+.cursor {
+  border-right: 3px solid #facc15;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
